@@ -21,6 +21,7 @@ const Header = () => {
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
+        <EndSpot />
       </MainHeader>
     </header>
   );
@@ -29,9 +30,20 @@ const Header = () => {
 const MainHeader = styled.div`
   padding: 0 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: flex;
+  padding-top: 21px;
+  padding-bottom: 23px;
+  align-items: baseline;
 `;
 
-const Nav = styled.nav``;
+const EndSpot = styled.div`
+  flex-basis:370px;
+`
+
+const Nav = styled.nav`
+  display: flex;
+  gap: 50px;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;

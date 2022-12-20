@@ -53,23 +53,32 @@ const ShoeCard = ({
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
+  flex-basis:340px;
+  
 `;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+  flex-basis: 340px;
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width:100%;
+`;
 
 const Row = styled.div`
+  display: flex;
+  
   font-size: 1rem;
 `;
 
 const Name = styled.h3`
   font-weight: ${WEIGHTS.medium};
   color: ${COLORS.gray[900]};
+  margin-right: auto;
 `;
 
 const Price = styled.span``;
